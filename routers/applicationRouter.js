@@ -1,4 +1,15 @@
-var express = require('express');
+var router = require('express').Router();
+let {createApplication, fetchApplications} = require('../controllers/applicationController');
+
+
+router.post('/', createApplication);
+router.get('/', fetchApplications);
+
+
+module.exports = router;
+
+
+/*var express = require('express');
 var router = express.Router();
 var Application = require('../models/Applicationsmodel'); 
 
@@ -28,5 +39,5 @@ router.get('/', (req, res)=>{
 })
     
 
-module.exports = router;
+module.exports = router; */
 
