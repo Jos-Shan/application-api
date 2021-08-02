@@ -24,12 +24,12 @@ const ApplicationSchema = new mongoose.Schema({
     education: { type: String, required: true, trim: true },
     occupation: { type: String, required: true, trim: true },
     income: { type: String, required: true, trim: true },
-    laptop: { type: Boolean, required: true, trim: true },
-    data_access: { type: Boolean, required: true, trim: true },
-    access_to_classes: { type: Boolean, required: true, trim: true },
+    laptop: { type: String, required: true, trim: true },
+    dataAccess: { type: String, required: true, trim: true },
+    accessToclasses: { type: String, required: true, trim: true },
     opportunity: { type: String, required: true, trim: true },
-    which_media_channel: { type: String, required: true, trim: true  },
-    why_this_course: { type: String, required: true, trim: true },
+    mediaChannel: { type: String, required: true, trim: true  },
+    whyThiscourse: { type: String, required: true, trim: true },
 });
 
 var Application = module.exports = mongoose.model("Application", ApplicationSchema);

@@ -43,7 +43,12 @@ const userSchema = mongoose.Schema({
             type: String,
             required: true
         }
-    }]
+    }],
+    registerDate: {
+        type: Date,
+        required: true,
+        default: new Date()
+    }
 
 })
 
